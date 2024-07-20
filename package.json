@@ -1,0 +1,32 @@
+{
+  "name": "storybook-vitest-browser-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test:browser": "vitest --workspace=vitest.workspace.ts"
+  },
+  "dependencies": {
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@storybook/addon-interactions": "^8.2.5",
+    "@storybook/test": "^8.2.5",
+    "@storybook/vue3": "^8.2.5",
+    "@storybook/vue3-vite": "^8.2.5",
+    "@testing-library/vue": "^8.1.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitest/browser": "^2.0.3",
+    "playwright": "^1.45.2",
+    "storybook": "^8.2.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vitest": "^2.0.3",
+    "vue-tsc": "^2.0.24"
+  }
+}
